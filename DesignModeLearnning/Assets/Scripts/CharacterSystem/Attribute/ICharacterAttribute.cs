@@ -1,12 +1,17 @@
 ﻿
 public class ICharacterAttribute
 {
-    public string mName;
-    public int mMaxHP;
-    public float mMoveSpeed;
+    protected string mName;
+    protected int mMaxHP;
+    protected float mMoveSpeed;
 
-    public int mCurrentHP;
+    protected int mCurrentHP;
 
-    public string mIconSprite;
+    protected string mIconSprite;
+
+    protected int mLv;
+    protected float mCritRate; //0-1暴击率
+
+    protected IAttributeStrategy mStrategy;
 }
 
